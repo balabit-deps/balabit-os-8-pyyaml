@@ -1,3 +1,14 @@
+pyyaml (5.3.1-1ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: FullLoader arbitrary code execution
+    - debian/patches/CVE-2020-14343.patch: move a few constructors from
+      full_load to unsafe_load in lib/yaml/constructor.py,
+      lib3/yaml/constructor.py, tests/lib/test_recursive.py,
+      tests/lib3/test_recursive.py.
+    - CVE-2020-14343
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 12 Apr 2021 09:28:38 -0400
+
 pyyaml (5.3.1-1) unstable; urgency=medium
 
   * New upstream security release
